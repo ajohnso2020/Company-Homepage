@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    background-color: black;
+    color: white;
+    line-height: 1em;
+  }
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: justify;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: underline;  
+}
+
+p {
+    text-align: center;
+}
+/* mission section */
+
+.mission {
+   margin: 1em;
+}
+
+.mission img {
+    display: inline-flex;
+    width: 100%;
+}
+
+/* portfolio section */
+
+.portfolio {
+    margin: 1em;
+}
+
+.portfolio h3, img {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+/* team section */
+
+.team h3, img {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+/* footer section */
+
+.footer{
+    display: flex;
+}
+.year {
+ flex: 1;
+  left: 0;
+}
+
+.location {
+ flex: 1;
+ right: 0;
+}
+
+h3 {
+    text-align: center;
+}
