@@ -1,14 +1,16 @@
-html {
-    box-sizing: border-box;
+  html { 
+      background-color: black;
+      color: white;
   }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-    background-color: black;
-    color: white;
-    line-height: 1em;
-  }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
 
 h1 {
     text-align: center;
@@ -25,16 +27,22 @@ ul {
 }
 
 a {
-    text-decoration: underline;  
+    text-decoration: underline; 
+    color: gold;
+}
+a:hover {
+    text-decoration: none;
 }
 
 p {
     text-align: center;
 }
+
 /* mission section */
 
 .mission {
-   margin: 1em;
+   margin-top: 100px;
+   height: 400px;
 }
 
 .mission img {
@@ -45,17 +53,18 @@ p {
 /* portfolio section */
 
 .portfolio {
-    margin: 1em;
+    height: 500px;
 }
 
 .portfolio h3, img {
     display: inline-flex;
     flex-direction: column;
-    margin: 2px;
 }
 
 /* team section */
-
+.team {
+    height: 400px;
+}
 .team h3, img {
     display: inline-flex;
     flex-direction: column;
@@ -64,19 +73,55 @@ p {
 
 /* footer section */
 
-.footer{
+footer{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 1.5em;
+    padding: .5em;
+    background-color: black;
 }
 .year {
- flex: 1;
-  left: 0;
+  padding-left: .5em;  
 }
 
 .location {
- flex: 1;
- right: 0;
+ padding-right: 1.8em;
 }
 
-h3 {
+/* info section */
+
+.info {
+    height: 500px;
     text-align: center;
+}
+
+.info img {
+       width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+   ul {
+       justify-content: space-around;
+   }
+
+    .mission {
+       height: auto;
+   }
+   
+    h3, img{
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio {
+        height: 1000px;
+    }
+
+    .team {
+        height: 1000px;
+    }
+
 }
