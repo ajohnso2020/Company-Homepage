@@ -1,6 +1,11 @@
-  html { 
+  body { 
       background-color: black;
       color: white;
+  }
+
+  .day-mode {
+     background-color: wheat;
+     color: black;
   }
 
 .header {
